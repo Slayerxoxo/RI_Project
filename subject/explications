@@ -5,11 +5,11 @@ corpus :
 			album 4 -> test				Living Things
 
 	artiste 2 	album 1	-> apprentissage		Dear agony
-	BB		album 2	-> apprentisage			Not alone here
+	BB		album 2	-> apprentisage			We Are Not alone here
 			album 3	-> 50% apprentissage / 50% test	Phobia
 			album 4 -> test				Saturate
 
-	artiste 3 	album 1	-> apprentissage		Access Memories
+	artiste 3 	album 1	-> apprentissage		Random Access Memories
 	DP		album 2	-> apprentisage			Homework
 			album 3	-> 50% apprentissage / 50% test	Discovery
 			album 4 -> test				Human after all
