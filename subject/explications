@@ -1,0 +1,35 @@
+corpus :
+	artiste 1 	album 1	-> apprentissage		The Hunting Party
+	LP		album 2	-> apprentisage			Hybrid Theory
+			album 3	-> 50% apprentissage / 50% test	Meteora
+			album 4 -> test				Living Things
+
+	artiste 2 	album 1	-> apprentissage		Dear agony
+	BB		album 2	-> apprentisage			Not alone here
+			album 3	-> 50% apprentissage / 50% test	Phobia
+			album 4 -> test				Saturate
+
+	artiste 3 	album 1	-> apprentissage		Access Memories
+	DP		album 2	-> apprentisage			Homework
+			album 3	-> 50% apprentissage / 50% test	Discovery
+			album 4 -> test				Human after all
+
+
+Apprentissage :
+														motifsémergents 1/2  |	cas de test 1	|
+														motifsémergents 2/1  |	cas de test 1	|
+   apprentissage 1 |    prétraitement |	   apprentissage 1' |	 extraction |	 motif 1 |	sélection  |    motifsémergents 1/3  ||	cas de test 2	|
+   apprentissage 2 |--> + découpage   |--> apprentissage 2' |--> des	    |--> motif 2 |--> 	des motifs |--> motifsémergents 3/1  ||	cas de test 2	|
+   apprentissage 3 |    en séquence   |	   apprentissage 3' |	 motifs	    |	 motif 3 |	emergents  |    motifsémergents 1/2+3 |	cas de test 3	|
+														motifsémergents 2/1+3 | cas de test 3	|
+														motifsémergents 3/1+2 |	cas de test 3	|
+																			|
+   fichier de test |--> prétraitement |--> fichier de test' |--> extraction des mots |--> fichier de motifs ----------------------------		|
+																	|		|
+																	|		|
+																	  classification
+																		|
+																	artiste correspondant à la chanson
+
+
+
