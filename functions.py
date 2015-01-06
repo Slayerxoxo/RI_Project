@@ -12,6 +12,7 @@ import re
 import sys
 import os
 import codecs
+import glob
 
 
 ###############################
@@ -42,6 +43,8 @@ def affichage(num):
     elif num == 0:
         print("                                 " + color.GREEN + " > done" + color.END)
     elif num == 1:
+        print(color.BOLD + "\n\nPRETRAITEMENT DES CORPUS:" + color.END)
+    elif num == 2:
         print(color.BOLD + "\n\nEXTRACTION DE MOTIF EMERGENTS :" + color.END)
 
 
@@ -176,3 +179,229 @@ def emergent_motif_extraction_funct(param):
                     file_EM7.write(";")
             file_EM7.write("\n")
     file_EM7.close()
+
+
+
+######################################
+# Création des vecteurs de contextes #
+######################################
+
+def creation_context_vector(file_name_song, file_name_train):
+    vector_dic = {}
+    file_song = codecs.open(file_name_song, "r", "utf-8")
+    file_train = codecs.open(file_name_train, "r", "utf-8")
+
+    for line in file_song.readlines():
+        motif_song_lst = line.split("\t")[0].split("{")
+        motif_song = ""
+        for element in motif_song_lst:
+            if element != "":
+                motif_song = motif_song + element.rstrip("}") + ";"
+        vector_dic[motif_song] = 0
+    for line in file_train.readlines():
+        if line.rstrip("\n") in vector_dic.keys():
+            vector_dic[line.rstrip("\n")] += 1
+    file_song.close()
+    file_train.close()
+    return vector_dic
+
+
+
+###############################
+#           Calculs           #
+###############################
+
+###    cosine    ###
+#    calcul le cosinus entre deux dictionnaires
+#    v1 et v2 sont les deux vecteurs de contextes liste('mot':frequence)
+def cosine(v1, v2):
+    if len(v2.keys()) == 0:
+        return 0.0
+
+    v1v2 = 0
+    v1v1 = 0
+    v2v2 = 0
+    for attr in set(v1.keys() + v2.keys()):
+        if attr in v1:
+            attr1 = v1[attr]
+        else:
+            attr1 = 0
+
+        if attr in v2:
+            attr2 = v2[attr]
+        else:
+            attr2 = 0
+
+        v1v2 += (attr1 * attr2)
+        v1v1 += (attr1 * attr1)
+        v2v2 += (attr2 * attr2)
+    return v1v2 / (math.sqrt(v1v1) * math.sqrt(v2v2))
+
+
+def somme_vec(v1):
+    somme = 0
+    for element in v1.keys():
+        somme = somme + v1[element]
+    return somme
+
+
+
+def first_class_funct(gap,param):
+
+    #premier Classifieur
+    print "PREMIER CLASSIFIEUR LINKINPARK"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_LinkinPark/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_1/EM1"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_1/EM2"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        if somme1 > somme2:
+            print file_test.split("/")[-1], " est de LinkinPark"
+        elif somme1 < somme2:
+            print file_test.split("/")[-1], " est de BreakingBenjamin"
+        else:
+            print file_test.split("/")[-1], " on ne sait pas"
+
+    print "PREMIER CLASSIFIEUR BREAKINGBENJAMIN"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_BreakingBenjamin/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_1/EM1"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_1/EM2"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        if somme1 > somme2:
+            print file_test.split("/")[-1], " est de LinkinPark"
+        elif somme1 < somme2:
+            print file_test.split("/")[-1], " est de BreakingBenjamin"
+        else:
+            print file_test.split("/")[-1], " on ne sait pas"
+
+    print "DEUXIEME CLASSIFIEUR LINKINPARK"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_LinkinPark/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_2/EM3"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_2/EM4"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        if somme1 > somme2:
+            print file_test.split("/")[-1], " est de LinkinPark"
+        elif somme1 < somme2:
+            print file_test.split("/")[-1], " est de DaftPunk"
+        else:
+            print file_test.split("/")[-1], " on ne sait pas"
+
+    print "DEUXIEME CLASSIFIEUR DAFTPUNK"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_DaftPunk/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_2/EM3"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_2/EM4"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        if somme1 > somme2:
+            print file_test.split("/")[-1], " est de LinkinPark"
+        elif somme1 < somme2:
+            print file_test.split("/")[-1], " est de DaftPunk"
+        else:
+            print file_test.split("/")[-1], " on ne sait pas"
+
+    print "TROISIEME CLASSIFIEUR LINKINPARK"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_LinkinPark/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM5"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM6"
+    file_train3_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM7"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        song3_vc = creation_context_vector(file_test,file_train3_name)
+        somme3 = somme_vec(song3_vc)
+        if somme1 > somme2 :
+            if somme1 > somme3 :
+                print file_test.split("/")[-1], " est de LinkinPark"
+            elif somme3 > somme1 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de LP, soit de DP"
+        elif somme2 > somme1 :
+            if somme2 > somme3 :
+                print file_test.split("/")[-1], " est de BreakingBenjamin"
+            elif somme3 > somme2 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de BB, soit de DP"
+        elif somme3 > somme1 :
+            print file_test.split("/")[-1], " est de DaftPunk"
+        else :
+            print file_test.split("/")[-1], " est soit de LP, soit de BB"
+
+    print "TROISIEME CLASSIFIEUR BREAKINGBENJAMIN"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_BreakingBenjamin/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM5"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM6"
+    file_train3_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM7"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        song3_vc = creation_context_vector(file_test,file_train3_name)
+        somme3 = somme_vec(song3_vc)
+        if somme1 > somme2 :
+            if somme1 > somme3 :
+                print file_test.split("/")[-1], " est de LinkinPark"
+            elif somme3 > somme1 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de LP, soit de DP"
+        elif somme2 > somme1 :
+            if somme2 > somme3 :
+                print file_test.split("/")[-1], " est de BreakingBenjamin"
+            elif somme3 > somme2 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de BB, soit de DP"
+        elif somme3 > somme1 :
+            print file_test.split("/")[-1], " est de DaftPunk"
+        else :
+            print file_test.split("/")[-1], " est soit de LP, soit de BB"
+
+    print "TROISIEME CLASSIFIEUR DAFTPUNK"
+    file_test_name = "data/motif/testgap" + str(gap) + "/test_DaftPunk/*"
+    file_train1_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM5"
+    file_train2_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM6"
+    file_train3_name = "data/classifieur/param_"+ str(param) + "/classifieur_3/EM7"
+    for file_test in glob.glob(file_test_name):
+        song1_vc = creation_context_vector(file_test,file_train1_name)
+        somme1 = somme_vec(song1_vc)
+        song2_vc = creation_context_vector(file_test,file_train2_name)
+        somme2 = somme_vec(song2_vc)
+        song3_vc = creation_context_vector(file_test,file_train3_name)
+        somme3 = somme_vec(song3_vc)
+        if somme1 > somme2 :
+            if somme1 > somme3 :
+                print file_test.split("/")[-1], " est de LinkinPark"
+            elif somme3 > somme1 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de LP, soit de DP"
+        elif somme2 > somme1 :
+            if somme2 > somme3 :
+                print file_test.split("/")[-1], " est de BreakingBenjamin"
+            elif somme3 > somme2 :
+                print file_test.split("/")[-1], " est de DaftPunk"
+            else :
+                print file_test.split("/")[-1], " est soit de BB, soit de DP"
+        elif somme3 > somme1 :
+            print file_test.split("/")[-1], " est de DaftPunk"
+        else :
+            print file_test.split("/")[-1], " est soit de LP, soit de BB"

@@ -2,76 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="767588e6-1d2f-433c-8eb4-ccd808ab3eef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main_script.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_1/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_1/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_1/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_2/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_2/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_2/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_3/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_3/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_3/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_4/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_4/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_4/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_5/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_5/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_5/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_6/BreakingBenjamin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_6/DaftPunk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/Motif/param_6/LinkinPark" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/param" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/ref_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/ref_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/ref_3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/ref_BreakingBenjamin.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/ref_DaftPunk.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Forever" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Had Enough" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Here We Are" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Home" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/I Wish I May" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Medicate" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Natural Life" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Next To Nothing" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/No Games" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Phase" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Polyamorous" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Shallow Baie" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Skin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Sugarcoat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Topless" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Unknown Soldier" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/Water" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_BreakingBenjamin/You Fight Me" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Face To face" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Human After All" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Robot Rock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Steam Machine" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Technologic" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Television Rules The Nation" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/The Brainwasher" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/The Prime Time Of Your Life" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_DaftPunk/Too Long" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Burn it Down" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Castle of Glass" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Faint" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Figure.09" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/I'll Be Gone" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/In My Remains" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Lies Greed Misery" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Lost in the Echo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Nobody's Listening" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Powerless" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Roads Untraveled" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Skin to Bone" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Until It Breaks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/test_LinkinPark/Victimized" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/train_BreakingBenjamin.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/train_DaftPunk.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/corpus/train_LinkinPark.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.py" afterPath="$PROJECT_DIR$/functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_script.py" afterPath="$PROJECT_DIR$/main_script.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RI_Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,8 +30,8 @@
       <file leaf-file-name="main_script.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9951456" vertical-offset="0" max-vertical-offset="900">
-              <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.5581015" vertical-offset="739" max-vertical-offset="1485">
+              <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
               <folding>
                 <element signature="e#100#110#0" expanded="true" />
               </folding>
@@ -109,8 +42,8 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2745">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="5157" max-vertical-offset="6180">
+              <caret line="378" column="57" selection-start-line="378" selection-start-column="57" selection-end-line="378" selection-end-column="57" />
               <folding>
                 <element signature="e#107#116#0" expanded="true" />
               </folding>
@@ -356,23 +289,23 @@
     <frame x="-1" y="0" width="1864" height="1055" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16111708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08807734" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33679834" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -395,6 +328,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="900">
+          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+          <folding>
+            <element signature="e#100#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="462" max-vertical-offset="2745">
@@ -405,10 +348,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5157" max-vertical-offset="6180">
+          <caret line="378" column="57" selection-start-line="378" selection-start-column="57" selection-end-line="378" selection-end-column="57" />
+          <folding>
+            <element signature="e#107#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9951456" vertical-offset="0" max-vertical-offset="900">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.5581015" vertical-offset="739" max-vertical-offset="1485">
+          <caret line="72" column="4" selection-start-line="72" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
           <folding>
             <element signature="e#100#110#0" expanded="true" />
           </folding>
