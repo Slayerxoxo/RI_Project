@@ -246,7 +246,7 @@ def somme_vec(v1):
 
 
 
-def first_class_funct(gap,param):
+def class_funct(gap,param):
 
     #premier Classifieur
     print "PREMIER CLASSIFIEUR LINKINPARK"

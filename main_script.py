@@ -84,4 +84,4 @@ if __name__ == "__main__":
     #class_funct(5,5)
     #class_funct(5,6)
     #class_funct(5,7)
-    #class_funct(5,8)
+    class_funct(5,8)
