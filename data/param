@@ -16,3 +16,9 @@ param_5
 param_6
 	gap min		gap max		taille min 		taille max		support min
 	0			0			1				10				5
+param_7
+	gap min		gap max		taille min 		taille max		support min
+	0			5			1				10				3
+param_8
+	gap min		gap max		taille min 		taille max		support min
+	0			0			1				10				3

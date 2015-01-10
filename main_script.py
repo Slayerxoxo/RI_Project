@@ -57,6 +57,8 @@ if __name__ == "__main__":
         emergent_motif_extraction_funct(4)
         emergent_motif_extraction_funct(5)
         emergent_motif_extraction_funct(6)
+        emergent_motif_extraction_funct(7)
+        emergent_motif_extraction_funct(8)
         affichage(0)
 
 
@@ -67,28 +69,19 @@ if __name__ == "__main__":
         #création d'un vecteur de contexte pour chaque fichier test
         #comparaison entre les vecteurs avec le cosinus
 
-    #first_class_funct(0,1)
-    #first_class_funct(0,2)
-    #first_class_funct(0,3)
-    #first_class_funct(0,4)
-    first_class_funct(0,5)
-    #first_class_funct(0,6)
-    #first_class_funct(5,1)
-    #first_class_funct(5,2)
-    #first_class_funct(5,3)
-    #first_class_funct(5,4)
-    #first_class_funct(5,5)
-    #first_class_funct(5,6)
-
-
-
-
-
-
-    ###############################################
-    # Classification sur le deuxième  classifieur #
-    ###############################################
-
-    ###############################################
-    # Classification sur le troisième classifieur #
-    ###############################################
+    #class_funct(0,1)
+    #class_funct(0,2)
+    #class_funct(0,3)
+    #class_funct(0,4)
+    #class_funct(0,5)
+    #class_funct(0,6)
+    #class_funct(0,7)
+    #class_funct(0,8)
+    #class_funct(5,1)
+    #class_funct(5,2)
+    #class_funct(5,3)
+    #class_funct(5,4)
+    #class_funct(5,5)
+    #class_funct(5,6)
+    #class_funct(5,7)
+    #class_funct(5,8)
